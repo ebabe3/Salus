@@ -8,16 +8,15 @@ const CommonTextInput = ({
   placeholderText,
   secureEntry = false,
   inputWidth,
-  inputHeight = 35,
+  inputHeight = 45,
   keyboardType = 'default',
 }) => {
   const containerCommonStyle = {
     width: inputWidth,
     height: inputHeight,
     borderBottomColor: 'white',
-    backgroundColor: '#F2F0F0',
     marginTop: '12%',
-    backgroundColor: COLOR.salusOrange,
+    backgroundColor: '#FF9633',
     peddingRight: '%100',
     borderBottomWidth: 1,
   };
@@ -25,7 +24,7 @@ const CommonTextInput = ({
   const textInputStyle = {
     flex: 1,
     fontSize: 16,
-    height: 40,
+    height: 50,
     paddingLeft: 15,
     color: 'pink',
   };

@@ -28,6 +28,7 @@ const Navigator = navigation => {
           name="Home"
           component={HomeScreen}
           options={{
+            title: '',
             headerBackVisible: false,
             headerStyle: {
               backgroundColor: COLOR.salusOrange,
@@ -39,6 +40,7 @@ const Navigator = navigation => {
           name="Account"
           component={Account}
           options={{
+            title: '',
             headerBackTitleStyle: {
               color: 'white',
             },
@@ -51,6 +53,7 @@ const Navigator = navigation => {
           name="Measurement"
           component={Measurement}
           options={{
+            title: '',
             headerBackTitle: 'Geri',
             headerTintColor: 'white',
             headerRight: navigation => (
@@ -69,7 +72,9 @@ const Navigator = navigation => {
         <Stack.Screen
           name="AddUser"
           component={AddUser}
+          headerTitle
           options={{
+            title: '',
             headerBackTitle: 'Geri',
             headerTintColor: 'white',
             headerStyle: {

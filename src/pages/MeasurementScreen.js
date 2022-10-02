@@ -30,7 +30,7 @@ const Measurement = ({navigation}) => {
         }}></View>
       <View style={{paddingLeft: 5}}>
         <Text style={styles.itemText}>{title}</Text>
-        <Text style={{fontSize: 15, color: 'grey'}}>Ölçüm</Text>
+        <Text style={{fontSize: 15, color: 'grey'}}>Ölçüm Sayısı</Text>
       </View>
     </TouchableOpacity>
   );
@@ -75,7 +75,7 @@ const Measurement = ({navigation}) => {
               textColor="#FF9633"
               buttonWidth={'35%'}
               onPress={() => {
-                navigation.navigate('Home');
+                Alert.alert('Düzenleme Yapılıyor...');
               }}
             />
           </View>
@@ -106,6 +106,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: 35,
+    marginTop: '10%',
     backgroundColor: '#FF9633',
     justifyContent: 'center',
   },

@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import {Alert, StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import CommonTextInput from '../components/CommonTextInput';
 import {COLOR} from '../style/color';
 import Icon from 'react-native-vector-icons/Feather';
@@ -72,14 +72,14 @@ const Login = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </View>
-      <View style={{marginTop: '100%', width: '100%', alignItems: 'center'}}>
+      <View style={{marginTop: '55%', width: '100%', alignItems: 'center'}}>
         <Text style={{color: 'white', fontSize: 15}}>Hesabınız yoksa? </Text>
         <CommonButton
           text="Yeni Kayıt"
           buttonColor={COLOR.salusOrange}
           buttonWidth={'70%'}
           onPress={() => {
-            navigation.navigate('Register');
+            Alert.alert('Kayıt olma sayfası açılacaktır...');
           }}
         />
       </View>

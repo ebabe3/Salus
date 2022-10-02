@@ -5,6 +5,7 @@ import {
   StyleSheet,
   SectionList,
   TouchableOpacity,
+  Alert,
 } from 'react-native';
 import CommonButton from '../components/CommonButton';
 
@@ -65,7 +66,7 @@ const HomeScreen = ({navigation}) => {
               buttonWidth={'35%'}
               textColor="#FF9633"
               onPress={() => {
-                navigation.navigate('Account');
+                Alert.alert('Profil sayfasına yönlendirilecektir...');
               }}
             />
             <CommonButton
@@ -80,7 +81,6 @@ const HomeScreen = ({navigation}) => {
           </View>
         </View>
       </View>
-
       <SectionList
         sections={DATA}
         keyExtractor={(item, index) => item + index}
@@ -105,6 +105,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: '100%',
     height: 35,
+    marginTop: '12%',
     backgroundColor: '#FF9633',
     justifyContent: 'center',
   },
