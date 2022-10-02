@@ -6,14 +6,14 @@ const CommonButton = ({
   text,
   textColor = 'white',
   onPress,
-  buttonBorderColor,
-  buttonBorderWidth = 0,
+  buttonBorderColor = 'white',
+  buttonBorderWidth = 1,
   buttonFontSize = 16,
   buttonWidth,
   buttonMarginTop,
   buttonMarginBottom = 0,
-  buttonHeight = 50,
-  buttonRadius = 36,
+  buttonHeight = 40,
+  buttonRadius = 15,
   disabled = false,
 }) => {
   const wrapperStyle = {
@@ -31,12 +31,6 @@ const CommonButton = ({
     width: '100%',
     height: buttonHeight,
     borderWidth: buttonBorderWidth,
-    shadowOffset: {
-      width: 0,
-      height: 2.5,
-    },
-    shadowOpacity: 0.2,
-    shadowRadius: 2,
     borderColor: buttonBorderColor,
     borderRadius: buttonRadius,
     justifyContent: 'center',
@@ -54,9 +48,7 @@ const CommonButton = ({
       style={wrapperStyle}
       onPress={onPress}
       activeOpacity={0.7}>
-      <View
-        colors={['#f45a33', '#FE6229', '#FF9633']}
-        style={containerCommonStyle}>
+      <View style={containerCommonStyle}>
         <Text style={textCommonStyle}> {text} </Text>
       </View>
     </TouchableOpacity>

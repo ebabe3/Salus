@@ -8,7 +8,7 @@ const CommonTextInput = ({
   placeholderText,
   secureEntry = false,
   inputWidth,
-  inputHeight = 40,
+  inputHeight = 35,
   keyboardType = 'default',
 }) => {
   const containerCommonStyle = {
@@ -16,7 +16,7 @@ const CommonTextInput = ({
     height: inputHeight,
     borderBottomColor: 'white',
     backgroundColor: '#F2F0F0',
-    marginTop: 49,
+    marginTop: '12%',
     backgroundColor: COLOR.salusOrange,
     peddingRight: '%100',
     borderBottomWidth: 1,
@@ -40,7 +40,7 @@ const CommonTextInput = ({
         secureTextEntry={secureEntry}
         onChangeText={onChangeText}
         placeholder={placeholderText}
-        placeholderTextColor={'grey'}
+        placeholderTextColor={'white'}
         value={text}
       />
     </View>
