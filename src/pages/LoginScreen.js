@@ -62,7 +62,7 @@ const Login = ({navigation}) => {
             buttonWidth={'100%'}
             buttonMarginTop={'5%'}
             onPress={() => {
-              onSubmit(phone, password);
+              navigation.navigate('Home');
             }}
           />
           <TouchableOpacity style={{marginTop: 30, height: 20}}>
